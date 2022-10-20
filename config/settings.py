@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-import django_heroku
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
@@ -106,9 +105,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-# Heroku PostgreSQL Database
-django_heroku.settings(locals())
 
 
 # Password validation
